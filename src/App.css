@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+nav h1{
+    font-family: 'Audiowide', cursive;
+}
+
+.landing .content{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.landing h1{
+    font-family: 'Michroma', sans-serif;
+}
