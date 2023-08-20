@@ -1,4 +1,5 @@
 .footer {
+  /* font-size should be smaller; you can try with 0.6rem, font weight lighter and color something like gray */
     background-color: black;
     display: flex;
     justify-content: space-between;
