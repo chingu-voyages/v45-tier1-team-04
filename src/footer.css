@@ -1,0 +1,18 @@
+.footer {
+  /* font-size should be smaller; you can try with 0.6rem, font weight lighter and color something like gray */
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 10px;
+    align-items: flex-end;
+  }
+  .three {
+    text-align: right;
+  }
+  .three p {
+    margin: 5px;
+  }
+  .first p {
+    margin: 5px;
+  }
