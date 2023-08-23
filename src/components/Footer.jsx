@@ -3,33 +3,33 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 export default function Footer() {
   return (
-    <div className="footer">
-      <div className="first">
+    <div>
+      <div>
         <p>Search</p>
         <p>NASA Blogs</p>
         <p>NASA Gallery</p>
         <p>Meteorite Landings</p>
       </div>
-      <div className="second">&#169; 2023 V45-Team04 | All Rights Reserved</div>
-      <div className="three">
+      <div>&#169; 2023 V45-Team04 | All Rights Reserved</div>
+      <div>
         <p>
-          biroue<span className="space"></span>
+          biroue
           <FontAwesomeIcon icon={faGithub} />
         </p>
         <p>
-          Drazen<span className="space"></span>
+          Drazen
           <FontAwesomeIcon icon={faGithub} />
         </p>
         <p>
-          Uche <span className="space"></span>
+          Uche
           <FontAwesomeIcon icon={faGithub} />
         </p>
         <p>
-          Milica <span className="space"></span>
+          Milica
           <FontAwesomeIcon icon={faGithub} />
         </p>
         <p>
-          David<span className="space"></span>
+          David
           <FontAwesomeIcon icon={faGithub} />
         </p>
       </div>
