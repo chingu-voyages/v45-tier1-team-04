@@ -10,14 +10,14 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 //like <nameOfIcon />
 export default function Footer() {
   return (
-    <div id="footer" className="flex justify-between absolute left-0 right-0 bottom-0 w-full overflow-hidden px-[.5em] bg-[#00000005] text-white font-light">
+    <div id="footer" className="flex justify-between absolute left-0 right-0 bottom-0 w-full overflow-hidden px-[.5em] py-[.5em] bg-[#00000005] text-white font-light">
       <div>
         <p>Search</p>
         <p>NASA Blogs</p>
         <p>NASA Gallery</p>
         <p>Meteorite Landings</p>
       </div>
-      <div>&#169; 2023 V45-Team04 | All Rights Reserved</div>
+      <div className="text-[.5em] flex justify-center items-end">&#169; 2023 V45-Team04 | All Rights Reserved</div>
       <div>
         <p>
           biroue
