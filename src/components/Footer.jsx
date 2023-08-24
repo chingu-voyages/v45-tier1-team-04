@@ -10,7 +10,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 //like <nameOfIcon />
 export default function Footer() {
   return (
-    <div id="footer" className="flex justify-between lg:text-[.8rem] sm:text-[.5rem] absolute left-0 right-0 bottom-0 w-full overflow-hidden md:px-[.5em] md:py-[.5em] bg-[#00000060] text-white font-light">
+    <div id="footer" className="flex justify-between xl:text-[1rem] md:text-[.8rem] sm:text-[.5rem] absolute left-0 right-0 bottom-0 w-full overflow-hidden md:px-[.5em] md:py-[.2em] bg-[#00000060] text-white font-thin">
       <div>
         <p>Search</p>
         <p>NASA Blogs</p>
