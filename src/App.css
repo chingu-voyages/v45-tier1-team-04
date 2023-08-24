@@ -19,21 +19,10 @@ nav h1 {
   font-family: "Michroma", sans-serif;
 }
 
-nav ul li {
-  font-size: 0.7rem;
-}
-
-p {
-  font-size: 0.8rem;
-  font-weight: 300;
-}
 .landing .content {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-/* footer */
-#footer p {
-    font-size: .5em;
-}
+
