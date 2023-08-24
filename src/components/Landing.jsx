@@ -10,7 +10,7 @@ const Landing = () => {
         muted
         className="w-full h-full absolute top-0 left-0 object-cover -z-10"
       />
-      <div className="overlay w-full h-full bg-[#00000050]"></div>
+      <div className="overlay w-full  bg-[#00000050]"></div>
       <div className="content w-full text-white flex flex-col justify-center items-center absolute px-[10em]">
         <h1 className="text-[2.5rem] w-full text-center font-semibold">
           Unlock the Mysteries of the Cosmos
