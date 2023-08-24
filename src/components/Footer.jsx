@@ -10,35 +10,50 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 //like <nameOfIcon />
 export default function Footer() {
   return (
-    <div id="footer" className="flex justify-between lg:font-[.8em] sm:font-[.5em] absolute left-0 right-0 bottom-0 w-full overflow-hidden md:px-[.5em] md:py-[.5em] bg-[#00000005] text-white font-light">
+    <div id="footer" className="flex justify-between lg:text-[.8rem] sm:text-[.5rem] absolute left-0 right-0 bottom-0 w-full overflow-hidden md:px-[.5em] md:py-[.5em] bg-[#00000060] text-white font-light">
       <div>
         <p>Search</p>
         <p>NASA Blogs</p>
         <p>NASA Gallery</p>
         <p>Meteorite Landings</p>
       </div>
-      <div className="text-[.5em] flex justify-center items-end">&#169; 2023 V45-Team04 | All Rights Reserved</div>
-      <div>
-        <p>
+      <div className="flex justify-center items-end">&#169; 2023 V45-Team04 | All Rights Reserved</div>
+      <div className="w-[6em]">
+        {/* this should be in a div so we can position it better */}
+        <div className="flex justify-between">
+        <p className="w-[80%]">
           biroue
-          <FontAwesomeIcon icon={faGithub} />
         </p>
-        <p>
+        <span><FontAwesomeIcon icon={faGithub} /></span>
+        </div>
+      
+        {/* this should be in a div so we can position it better */}
+        <div className="flex justify-between">
+        <p className="w-[80%]">
           Drazen
-          <FontAwesomeIcon icon={faGithub} />
         </p>
-        <p>
+        <span><FontAwesomeIcon icon={faGithub} /></span>
+        </div>
+
+        <div className="flex justify-between">
+        <p className="w-[80%]">
           Uche
-          <FontAwesomeIcon icon={faGithub} />
         </p>
-        <p>
-          Milica
-          <FontAwesomeIcon icon={faGithub} />
+        <span><FontAwesomeIcon icon={faGithub} /></span>
+        </div>
+        <div className="flex justify-between">
+        <p className="w-[80%]">
+         Milica
         </p>
-        <p>
-          David
-          <FontAwesomeIcon icon={faGithub} />
+        <span><FontAwesomeIcon icon={faGithub} /></span>
+        </div>
+        <div className="flex justify-between">
+        <p className="w-[80%]">
+         David
         </p>
+        <span><FontAwesomeIcon icon={faGithub} /></span>
+        </div>
+        
       </div>
     </div>
   );
