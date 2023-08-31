@@ -1,5 +1,4 @@
 import bgVideo from "../assets/bgVideo.mp4";
-
 const Landing = () => {
   return (
     <div className="landing w-full h-full flex-coflexl justify-center items-center relative transition-all duration-75">
