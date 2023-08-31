@@ -10,11 +10,10 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 //then you can import the same way {name of icon} from 'react-icons/fa -if it's fontawesome' and than use in project
 //like <nameOfIcon />
 export default function Footer() {
+  // Sort contributors by gitHub name
   const sortedContributors = contributors.sort((a, b) =>
     a.gitHubName.localeCompare(b.gitHubName)
   );
-
-  console.log("SORTED" + sortedContributors);
 
   return (
     <div
@@ -31,6 +30,7 @@ export default function Footer() {
         &#169; 2023 V45-Team04 | All Rights Reserved
       </div>
       <div className="w-[13em]">
+        {/* List all contributors */}
         {sortedContributors.map((contributor) => (
           <ContributorList contributor={contributor} />
         ))}
