@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 function SearchAndFilter() {
+  // formData state holds all the form data in one object
   const [formData, setformData] = useState({
     search: "",
     startYear: 1900,
@@ -9,8 +10,10 @@ function SearchAndFilter() {
     maxMass: null,
   });
 
+  // Keep an eye on the formData properties and values
   console.log(formData);
 
+  // handleFormChange function handles the changes in all form inputs
   function handleFormChange(event) {
     setformData((prevFormData) => {
       return {
@@ -23,6 +26,7 @@ function SearchAndFilter() {
     });
   }
 
+  // handleFormFix function updates properties when the value has been fixed
   function handleFormFix(event, fixValue) {
     setformData((prevFormData) => {
       return {
@@ -45,7 +49,8 @@ function SearchAndFilter() {
   //   function handleStartYearChange(event) {
   //     setStartYear(parseInt(event.target.value));
   //   }
-  // Handle Start Year wrong value
+
+  // fixStartYear funtion fixes non logical values inside startYear property
   function fixStartYear(event) {
     let tempStartYear;
     if (parseInt(event.target.value) < 1900) {
@@ -55,7 +60,6 @@ function SearchAndFilter() {
     } else {
       tempStartYear = parseInt(event.target.value);
     }
-
     handleFormFix(event, tempStartYear);
   }
   // Handle End Year
@@ -63,6 +67,8 @@ function SearchAndFilter() {
   //     setEndYear(parseInt(event.target.value));
   //   }
   // Handle End Year wrong value
+
+  // fixEndYear funtion fixes non logical values inside endYear property
   function fixEndYear(event) {
     let tempEndYear;
     if (parseInt(event.target.value) > new Date().getFullYear()) {
@@ -78,6 +84,8 @@ function SearchAndFilter() {
   //   function handleMinMassChange(event) {
   //     setMinMass(parseInt(event.target.value));
   //   }
+
+  // fixMinMass funtion fixes non logical values inside minMass property
   function fixMinMass(event) {
     let tempMinMass;
     if (parseInt(event.target.value) < 0) {
@@ -92,6 +100,8 @@ function SearchAndFilter() {
   //   function handleMaxMassChange(event) {
   //     setMaxMass(parseInt(event.target.value));
   //   }
+
+  // fixMaxMass funtion fixes non logical values inside maxMass property
   function fixMaxMass(event) {
     let tempMaxMass;
     if (parseInt(event.target.value) < formData.minMass) {
