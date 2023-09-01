@@ -15,7 +15,10 @@ function SearchAndFilter() {
     setformData((prevFormData) => {
       return {
         ...prevFormData,
-        [event.target.name]: event.target.value,
+        [event.target.name]:
+          event.target.name === "search"
+            ? event.target.value
+            : parseInt(event.target.value),
       };
     });
   }
