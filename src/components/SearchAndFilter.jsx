@@ -6,12 +6,12 @@ function SearchAndFilter() {
     search: "",
     startYear: 1900,
     endYear: new Date().getFullYear(),
-    minMass: null,
-    maxMass: null,
+    minMass: 0,
+    maxMass: Infinity,
   });
 
   // Keep an eye on the formData properties and values
-  console.log(formData);
+  //console.log(formData);
 
   // handleFormChange function handles the changes in all form inputs
   function handleFormChange(event) {

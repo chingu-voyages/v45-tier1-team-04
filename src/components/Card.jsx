@@ -1,17 +1,6 @@
-import { useState, useEffect } from "react";
 import SearchAndFilter from "./SearchAndFilter";
 
-const url = "https://data.nasa.gov/resource/gh4g-9sfh.json";
-function Card() {
-  const [data, setData] = useState([]);
-  const fetchInfo = () => {
-    return fetch(url)
-      .then((res) => res.json())
-      .then((d) => setData(d));
-  };
-  useEffect(() => {
-    fetchInfo();
-  }, []);
+function Card({ data }) {
   return (
     <>
       <div className="App">
@@ -22,8 +11,10 @@ function Card() {
             FETCH API
           </span>
         </h1>
+
         {/*Search & Filter*/}
         <SearchAndFilter />
+
         <center className="grid grid-cols-3 gap-y-12	">
           {data.map((dataObj) => {
             return (
