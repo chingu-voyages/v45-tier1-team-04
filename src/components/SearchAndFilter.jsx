@@ -36,20 +36,7 @@ function SearchAndFilter() {
     });
   }
 
-  //   const [search, setSearch] = useState("");
-  //   const [startYear, setStartYear] = useState(1900);
-  //   const [endYear, setEndYear] = useState(new Date().getFullYear());
-  //   const [minMass, setMinMass] = useState();
-  //   const [maxMass, setMaxMass] = useState();
-
-  //   function handleSearchChange(event) {
-  //     setSearch(event.target.value);
-  //   }
-  // Handle Start Year
-  //   function handleStartYearChange(event) {
-  //     setStartYear(parseInt(event.target.value));
-  //   }
-
+  // All fix non logical input functions
   // fixStartYear funtion fixes non logical values inside startYear property
   function fixStartYear(event) {
     let tempStartYear;
@@ -62,11 +49,6 @@ function SearchAndFilter() {
     }
     handleFormFix(event, tempStartYear);
   }
-  // Handle End Year
-  //   function handleEndYearChange(event) {
-  //     setEndYear(parseInt(event.target.value));
-  //   }
-  // Handle End Year wrong value
 
   // fixEndYear funtion fixes non logical values inside endYear property
   function fixEndYear(event) {
@@ -81,10 +63,6 @@ function SearchAndFilter() {
     handleFormFix(event, tempEndYear);
   }
 
-  //   function handleMinMassChange(event) {
-  //     setMinMass(parseInt(event.target.value));
-  //   }
-
   // fixMinMass funtion fixes non logical values inside minMass property
   function fixMinMass(event) {
     let tempMinMass;
@@ -97,9 +75,6 @@ function SearchAndFilter() {
     }
     handleFormFix(event, tempMinMass);
   }
-  //   function handleMaxMassChange(event) {
-  //     setMaxMass(parseInt(event.target.value));
-  //   }
 
   // fixMaxMass funtion fixes non logical values inside maxMass property
   function fixMaxMass(event) {
@@ -115,8 +90,8 @@ function SearchAndFilter() {
   return (
     <form>
       <input
-        className="border-2"
         name="search"
+        className="border-2"
         type="text"
         placeholder="Your Search"
         onChange={handleFormChange}
@@ -124,8 +99,8 @@ function SearchAndFilter() {
       />
       ***
       <input
-        className="border-2"
         name="startYear"
+        className="border-2"
         type="text"
         placeholder="Type start year"
         onChange={handleFormChange}
@@ -134,8 +109,8 @@ function SearchAndFilter() {
       />
       -
       <input
-        className="border-2"
         name="endYear"
+        className="border-2"
         type="text"
         placeholder="Type end year"
         onChange={handleFormChange}
@@ -144,8 +119,8 @@ function SearchAndFilter() {
       />
       ***
       <input
-        className="border-2"
         name="minMass"
+        className="border-2"
         type="text"
         placeholder="Type min mass in grams"
         onChange={handleFormChange}
@@ -154,8 +129,8 @@ function SearchAndFilter() {
       />
       -
       <input
-        className="border-2"
         name="maxMass"
+        className="border-2"
         type="text"
         placeholder="Type max mass in grams"
         onChange={handleFormChange}
