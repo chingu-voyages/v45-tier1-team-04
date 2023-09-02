@@ -29,6 +29,16 @@ function SearchPage() {
     let tempData = data;
     console.log();
 
+    if (
+      Number.isInteger(formData.minMass) &&
+      Number.isInteger(formData.maxMass)
+    ) {
+      tempData = tempData.filter(
+        (dataObj) =>
+          dataObj.mass >= formData.minMass && dataObj.mass <= formData.maxMass
+      );
+    }
+
     tempData = tempData.filter((dataObj) =>
       dataObj.name.toLowerCase().includes(formData.search.toLowerCase())
     );
