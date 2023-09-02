@@ -30,7 +30,7 @@ function SearchPage() {
     console.log();
 
     tempData = tempData.filter((dataObj) =>
-      dataObj.name.toLowerCase().includes(formData.search)
+      dataObj.name.toLowerCase().includes(formData.search.toLowerCase())
     );
 
     return tempData;
