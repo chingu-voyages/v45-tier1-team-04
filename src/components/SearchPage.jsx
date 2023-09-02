@@ -25,6 +25,16 @@ function SearchPage() {
   });
 
   console.log(formData);
+  function meteoriteFilter() {
+    let tempData = data;
+    console.log();
+
+    tempData = tempData.filter((dataObj) =>
+      dataObj.name.toLowerCase().includes(formData.search)
+    );
+
+    return tempData;
+  }
 
   return (
     <>
@@ -41,7 +51,7 @@ function SearchPage() {
 
         {/*Mapping all Cards*/}
         <center className="grid grid-cols-3 gap-y-12	">
-          {data.map((dataObj) => {
+          {meteoriteFilter().map((dataObj) => {
             return <Card key={dataObj.id} dataObj={dataObj} />;
           })}
         </center>
