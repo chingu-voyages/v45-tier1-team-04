@@ -15,6 +15,17 @@ function SearchPage() {
     fetchInfo();
   }, []);
 
+  // formData state holds all the form data in one object
+  const [formData, setformData] = useState({
+    search: "",
+    startYear: 1900,
+    endYear: new Date().getFullYear(),
+    minMass: 0,
+    maxMass: Infinity,
+  });
+
+  console.log(formData);
+
   return (
     <>
       <div className="App">
@@ -26,7 +37,7 @@ function SearchPage() {
           </span>
         </h1>
         {/*Search & Filter*/}
-        <SearchAndFilter />
+        <SearchAndFilter formData={formData} setformData={setformData} />
 
         {/*Mapping all Cards*/}
         <center className="grid grid-cols-3 gap-y-12	">

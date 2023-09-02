@@ -1,15 +1,6 @@
 import { useState } from "react";
 
-function SearchAndFilter() {
-  // formData state holds all the form data in one object
-  const [formData, setformData] = useState({
-    search: "",
-    startYear: 1900,
-    endYear: new Date().getFullYear(),
-    minMass: 0,
-    maxMass: Infinity,
-  });
-
+function SearchAndFilter({ formData, setformData }) {
   // Keep an eye on the formData properties and values
   //console.log(formData);
 
