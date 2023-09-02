@@ -30,6 +30,17 @@ function SearchPage() {
     console.log();
 
     if (
+      Number.isInteger(formData.startYear) &&
+      Number.isInteger(formData.endYear)
+    ) {
+      tempData = tempData.filter(
+        (dataObj) =>
+          new Date(dataObj.year).getFullYear() >= formData.startYear &&
+          new Date(dataObj.year).getFullYear() <= formData.endYear
+      );
+    }
+
+    if (
       Number.isInteger(formData.minMass) &&
       Number.isInteger(formData.maxMass)
     ) {
