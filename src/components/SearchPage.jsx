@@ -24,10 +24,8 @@ function SearchPage() {
     maxMass: Infinity,
   });
 
-  console.log(formData);
   function meteoriteFilter() {
     let tempData = data;
-    console.log();
 
     if (
       Number.isInteger(formData.startYear) &&
