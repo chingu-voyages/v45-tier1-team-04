@@ -36,8 +36,23 @@ function Card({ dataObj }) {
         </li>
       </ul>
       <hr className="w-48 h-1 mx-auto my-2 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
-      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
-        More
+      <button
+        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+        onClick={() => {
+          window.open(
+            "http://maps.google.com/maps?t=k&q=loc:" +
+              dataObj.reclat +
+              "," +
+              dataObj.reclong +
+              "&ll=" +
+              dataObj.reclat +
+              "," +
+              dataObj.reclong +
+              "&z=15"
+          );
+        }}
+      >
+        Show on Map
       </button>
     </div>
   );
