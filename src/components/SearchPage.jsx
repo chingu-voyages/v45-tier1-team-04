@@ -70,9 +70,13 @@ function SearchPage() {
 
         {/*Mapping all Cards*/}
         <center className="grid grid-cols-3 gap-y-12	">
-          {meteoriteFilter().map((dataObj) => {
-            return <Card key={dataObj.id} dataObj={dataObj} />;
-          })}
+          {meteoriteFilter().length > 0 ? (
+            meteoriteFilter().map((dataObj) => {
+              return <Card key={dataObj.id} dataObj={dataObj} />;
+            })
+          ) : (
+            <h1>NO meteorites with selected criteria</h1>
+          )}
         </center>
       </div>
     </>
