@@ -31,8 +31,8 @@ function SearchAndFilter({ formData, setformData }) {
   // fixStartYear funtion fixes non logical values inside startYear property
   function fixStartYear(event) {
     let tempStartYear;
-    if (parseInt(event.target.value) < 1900) {
-      tempStartYear = 1900;
+    if (parseInt(event.target.value) < 1400) {
+      tempStartYear = 1400;
     } else if (parseInt(event.target.value) > formData.endYear) {
       tempStartYear = formData.endYear;
     } else {

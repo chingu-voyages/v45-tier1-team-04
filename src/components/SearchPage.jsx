@@ -18,7 +18,7 @@ function SearchPage() {
   // formData state holds all the form data in one object
   const [formData, setformData] = useState({
     search: "",
-    startYear: 1900,
+    startYear: 1400,
     endYear: new Date().getFullYear(),
     minMass: 0,
     maxMass: Infinity,
