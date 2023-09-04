@@ -20,8 +20,8 @@ function SearchPage() {
     search: "",
     startYear: 1900,
     endYear: new Date().getFullYear(),
-    minMass: 0,
-    maxMass: Infinity,
+    minMass: undefined,
+    maxMass: undefined,
   });
 
   function meteoriteFilter() {

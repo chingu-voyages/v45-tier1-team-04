@@ -93,7 +93,7 @@ function SearchAndFilter({ formData, setformData }) {
         name="startYear"
         className="border-2"
         type="text"
-        placeholder="Type start year"
+        placeholder="Start year"
         onChange={handleFormChange}
         onBlur={fixStartYear}
         value={formData.startYear}
@@ -103,7 +103,7 @@ function SearchAndFilter({ formData, setformData }) {
         name="endYear"
         className="border-2"
         type="text"
-        placeholder="Type end year"
+        placeholder="End year"
         onChange={handleFormChange}
         onBlur={fixEndYear}
         value={formData.endYear}
@@ -113,7 +113,7 @@ function SearchAndFilter({ formData, setformData }) {
         name="minMass"
         className="border-2"
         type="text"
-        placeholder="Type min mass in grams"
+        placeholder="Min mass in grams"
         onChange={handleFormChange}
         onBlur={fixMinMass}
         value={formData.minMass}
@@ -123,7 +123,7 @@ function SearchAndFilter({ formData, setformData }) {
         name="maxMass"
         className="border-2"
         type="text"
-        placeholder="Type max mass in grams"
+        placeholder="Max mass in grams"
         onChange={handleFormChange}
         onBlur={fixMaxMass}
         value={formData.maxMass}
