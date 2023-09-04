@@ -20,15 +20,15 @@ function SearchPage() {
     search: "",
     startYear: 1900,
     endYear: new Date().getFullYear(),
-    minMass: undefined,
-    maxMass: undefined,
+    minMass: 0,
+    maxMass: Infinity,
   });
 
   function meteoriteFilter() {
     let tempData = data;
 
     if (
-      Number.isInteger(formData.startYear) &&
+      Number.isInteger(formData.startYear) ||
       Number.isInteger(formData.endYear)
     ) {
       tempData = tempData.filter(
@@ -39,7 +39,7 @@ function SearchPage() {
     }
 
     if (
-      Number.isInteger(formData.minMass) &&
+      Number.isInteger(formData.minMass) ||
       Number.isInteger(formData.maxMass)
     ) {
       tempData = tempData.filter(
