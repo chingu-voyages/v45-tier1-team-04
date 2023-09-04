@@ -79,55 +79,66 @@ function SearchAndFilter({ formData, setformData }) {
   }
 
   return (
-    <form>
-      <input
-        name="search"
-        className="border-2"
-        type="text"
-        placeholder="Your Search"
-        onChange={handleFormChange}
-        value={formData.search}
-      />
-      ***
-      <input
-        name="startYear"
-        className="border-2"
-        type="text"
-        placeholder="Start year"
-        onChange={handleFormChange}
-        onBlur={fixStartYear}
-        value={formData.startYear}
-      />
-      -
-      <input
-        name="endYear"
-        className="border-2"
-        type="text"
-        placeholder="End year"
-        onChange={handleFormChange}
-        onBlur={fixEndYear}
-        value={formData.endYear}
-      />
-      ***
-      <input
-        name="minMass"
-        className="border-2"
-        type="text"
-        placeholder="Min mass in grams"
-        onChange={handleFormChange}
-        onBlur={fixMinMass}
-        value={formData.minMass}
-      />
-      -
-      <input
-        name="maxMass"
-        className="border-2"
-        type="text"
-        placeholder="Max mass in grams"
-        onChange={handleFormChange}
-        onBlur={fixMaxMass}
-        value={formData.maxMass}
-      />
+    <form className="flex justify-center ">
+      <label>
+        Seach Name:
+        <input
+          name="search"
+          className="border-2"
+          type="text"
+          placeholder="Your Search"
+          onChange={handleFormChange}
+          value={formData.search}
+        />
+      </label>
+      <label>
+        startYear:
+        <input
+          name="startYear"
+          className="border-2"
+          type="text"
+          placeholder="Start year"
+          onChange={handleFormChange}
+          onBlur={fixStartYear}
+          value={formData.startYear}
+        />
+      </label>
+      <label>
+        endYear
+        <input
+          name="endYear"
+          className="border-2"
+          type="text"
+          placeholder="End year"
+          onChange={handleFormChange}
+          onBlur={fixEndYear}
+          value={formData.endYear}
+        />
+      </label>
+      <label>
+        minMass:
+        <input
+          name="minMass"
+          className="border-2"
+          type="text"
+          placeholder="Min mass in grams"
+          onChange={handleFormChange}
+          onBlur={fixMinMass}
+          value={formData.minMass}
+        />
+      </label>
+      <label>
+        maxMass:
+        <input
+          name="maxMass"
+          className="border-2"
+          type="text"
+          placeholder="Max mass in grams"
+          onChange={handleFormChange}
+          onBlur={fixMaxMass}
+          value={formData.maxMass}
+        />
+      </label>
     </form>
   );
 }
