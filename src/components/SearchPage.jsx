@@ -69,7 +69,7 @@ function SearchPage() {
         <SearchAndFilter formData={formData} setformData={setformData} />
 
         {/*Mapping all Cards*/}
-        <center className="flex flex-wrap justify-evenly mt-5 gap-5 px-5">
+        <center className="flex flex-wrap justify-evenly mt-5 mx-6 gap-6 ">
           {meteoriteFilter().length > 0 ? (
             meteoriteFilter().map((dataObj) => {
               return <Card key={dataObj.id} dataObj={dataObj} />;
