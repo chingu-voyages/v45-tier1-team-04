@@ -6,15 +6,18 @@ function SearchAndFilter({ formData, setformData }) {
 
   // handleFormChange function handles the changes in all form inputs
   function handleFormChange(event) {
-    setformData((prevFormData) => {
-      return {
-        ...prevFormData,
-        [event.target.name]:
-          event.target.name === "search"
-            ? event.target.value
-            : parseInt(event.target.value),
-      };
-    });
+    const regex = /^[0-9\b]+$/;
+    if (event.target.name === "search" || regex.test(event.target.value)) {
+      setformData((prevFormData) => {
+        return {
+          ...prevFormData,
+          [event.target.name]:
+            event.target.name === "search"
+              ? event.target.value
+              : parseInt(event.target.value),
+        };
+      });
+    }
   }
 
   // handleFormFix function updates properties when the value has been fixed
@@ -70,12 +73,18 @@ function SearchAndFilter({ formData, setformData }) {
   // fixMaxMass funtion fixes non logical values inside maxMass property
   function fixMaxMass(event) {
     let tempMaxMass;
-    if (parseInt(event.target.value) < formData.minMass) {
+    if (event.target.value === "Infinity") {
+      tempMaxMass = Infinity;
+    } else if (parseInt(event.target.value) < formData.minMass) {
       tempMaxMass = formData.minMass;
     } else {
       tempMaxMass = parseInt(event.target.value);
     }
     handleFormFix(event, tempMaxMass);
+  }
+
+  function handleFocus(event) {
+    event.target.select();
   }
 
   return (
@@ -100,6 +109,7 @@ function SearchAndFilter({ formData, setformData }) {
           placeholder="Start year"
           onChange={handleFormChange}
           onBlur={fixStartYear}
+          onClick={handleFocus}
           value={formData.startYear}
         />
       </label>
@@ -112,6 +122,7 @@ function SearchAndFilter({ formData, setformData }) {
           placeholder="End year"
           onChange={handleFormChange}
           onBlur={fixEndYear}
+          onClick={handleFocus}
           value={formData.endYear}
         />
       </label>
@@ -124,6 +135,7 @@ function SearchAndFilter({ formData, setformData }) {
           placeholder="Min mass in grams"
           onChange={handleFormChange}
           onBlur={fixMinMass}
+          onClick={handleFocus}
           value={formData.minMass}
         />
       </label>
@@ -136,6 +148,7 @@ function SearchAndFilter({ formData, setformData }) {
           placeholder="Max mass in grams"
           onChange={handleFormChange}
           onBlur={fixMaxMass}
+          onClick={handleFocus}
           value={formData.maxMass}
         />
       </label>
