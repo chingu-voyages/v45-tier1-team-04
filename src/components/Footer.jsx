@@ -6,6 +6,7 @@ import contributors from "../assets/contributors";
 //because we should have it on every page in our app
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 //better way is to install react-icons so you can use any icons library, fontawesome as well
 //then you can import the same way {name of icon} from 'react-icons/fa -if it's fontawesome' and than use in project
 //like <nameOfIcon />
@@ -21,7 +22,9 @@ function Footer() {
       className="flex justify-between w-full z-20 fixed bottom-0 px-14 py-2 bg-[#00000060] text-white font-thin"
     >
       <ul>
-        <li>Search</li>
+        <li>
+          <Link to="/search">Search</Link>
+        </li>
         <li>NASA Blogs</li>
         <li>NASA Gallery</li>
         <li>Meteorite Landings</li>
