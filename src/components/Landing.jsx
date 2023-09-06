@@ -1,16 +1,8 @@
-import bgVideo from "../assets/bgVideo.mp4";
-const Landing = () => {
+function Landing() {
   return (
-    <div className="landing w-full h-full flex-coflexl justify-center items-center relative transition-all duration-75">
-      <video
-        src={bgVideo}
-        autoPlay
-        loop
-        muted
-        className="w-full h-full absolute top-0 left-0 object-cover -z-10"
-      />
+    <div className="relative z-10 w-full h-full flex flex-col justify-center transition-all duration-75">
       <div className="overlay w-full  bg-[#00000050]"></div>
-      <div className="content w-full text-white flex flex-col justify-center items-center absolute px-[10em]">
+      <div className=" w-full text-white flex flex-col justify-center items-center absolute px-[10em]">
         <h1 className="text-[2.5rem] lg:text-[3rem] w-full text-center font-semibold">
           Unlock the Mysteries of the Cosmos
         </h1>
@@ -30,6 +22,6 @@ const Landing = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Landing;

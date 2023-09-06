@@ -18,7 +18,7 @@ export default function Footer() {
   return (
     <div
       id="footer"
-      className="flex justify-between xl:text-[1rem] md:text-[.8rem] sm:text-[.5rem] absolute left-0 right-0 bottom-0 w-full overflow-hidden md:px-[.5em] md:py-[.2em] bg-[#00000060] text-white font-thin"
+      className="flex justify-between w-full z-20 absolute bottom-0 px-14 py-2 bg-[#00000060] text-white font-thin"
     >
       <div>
         <p>Search</p>
