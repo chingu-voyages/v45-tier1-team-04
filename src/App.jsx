@@ -1,4 +1,5 @@
 import "./App.css";
+import BgVideo from "./components/BgVideo";
 // import Header from "./components/Header";
 // import Landing from "./components/Landing";
 // import Footer from "./components/Footer";
@@ -7,8 +8,8 @@ import SearchPage from "./components/SearchPage";
 
 function App() {
   return (
-    <div className="app w-[100vw] h-[100vh] overflow-x-hidden overflow-y-scroll relative">
-      <SearchPage />
+    <div className="app w-[100vw] h-[100vh] overflow-x-hidden relative">
+      <BgVideo />
     </div>
   );
 }
