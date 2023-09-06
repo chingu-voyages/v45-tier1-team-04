@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <nav className="flex justify-between w-full absolute z-20 top-0 font-extrabold xl:text-[1.2rem] lg:text-[1rem] sm:text-[.8rem] text-white border-b-2  px-14 py-6">
+    <nav className="flex justify-between w-full fixed z-20 top-0 font-extrabold xl:text-[1.2rem] lg:text-[1rem] sm:text-[.8rem] text-white border-b-2  px-14 py-6">
       <h1 className="tracking-wide lg:text-[1.3rem] text-[1rem] cursor-pointer">
         Fireball
       </h1>
