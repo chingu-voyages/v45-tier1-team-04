@@ -13,7 +13,12 @@ function Header() {
         <li className="cursor-pointer">
           <Link to="/search">Search</Link>
         </li>
-        <li className="cursor-pointer">Blogs</li>
+        <li className="cursor-pointer">
+          {" "}
+          <a href="https://blogs.nasa.gov/" target="_blank">
+            Blogs
+          </a>
+        </li>
       </ul>
     </nav>
   );
