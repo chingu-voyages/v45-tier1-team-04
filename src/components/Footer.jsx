@@ -32,7 +32,10 @@ export default function Footer() {
       <div className="w-[13em]">
         {/* List all contributors */}
         {sortedContributors.map((contributor) => (
-          <ContributorList contributor={contributor} />
+          <ContributorList
+            key={contributor.gitHubName}
+            contributor={contributor}
+          />
         ))}
       </div>
     </div>
