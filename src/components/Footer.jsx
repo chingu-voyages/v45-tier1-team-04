@@ -20,16 +20,16 @@ function Footer() {
       id="footer"
       className="flex justify-between w-full z-20 fixed bottom-0 px-14 py-2 bg-[#00000060] text-white font-thin"
     >
-      <div>
-        <p>Search</p>
-        <p>NASA Blogs</p>
-        <p>NASA Gallery</p>
-        <p>Meteorite Landings</p>
-      </div>
+      <ul>
+        <li>Search</li>
+        <li>NASA Blogs</li>
+        <li>NASA Gallery</li>
+        <li>Meteorite Landings</li>
+      </ul>
       <div className="flex justify-center items-end">
         &#169; 2023 V45-Team04 | All Rights Reserved
       </div>
-      <div className="w-[13em]">
+      <ul className="w-[13em]">
         {/* List all contributors */}
         {sortedContributors.map((contributor) => (
           <ContributorList
@@ -37,7 +37,7 @@ function Footer() {
             contributor={contributor}
           />
         ))}
-      </div>
+      </ul>
     </div>
   );
 }
@@ -46,11 +46,11 @@ export default Footer;
 
 function ContributorList({ contributor }) {
   return (
-    <div className="flex justify-between">
-      <p className="w-[80%]">{contributor.gitHubName}</p>
+    <li className="flex justify-between">
+      <span className="w-[80%]">{contributor.gitHubName}</span>
       <span>
         <FontAwesomeIcon icon={faGithub} />
       </span>
-    </div>
+    </li>
   );
 }
