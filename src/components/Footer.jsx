@@ -49,11 +49,17 @@ export default Footer;
 
 function ContributorList({ contributor }) {
   return (
-    <li className="flex justify-between">
-      <span className="w-[80%]">{contributor.gitHubName}</span>
-      <span>
-        <FontAwesomeIcon icon={faGithub} />
-      </span>
+    <li>
+      <a
+        className="flex justify-between"
+        href={contributor.gitHubLink}
+        target="_blank"
+      >
+        <span className="w-[90%]">{contributor.gitHubName}</span>
+        <span>
+          <FontAwesomeIcon icon={faGithub} />
+        </span>
+      </a>
     </li>
   );
 }
