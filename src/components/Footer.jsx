@@ -25,9 +25,27 @@ function Footer() {
         <li>
           <Link to="/search">Search</Link>
         </li>
-        <li>NASA Blogs</li>
-        <li>NASA Gallery</li>
-        <li>Meteorite Landings</li>
+        <li>
+          <a href="https://blogs.nasa.gov/" target="_blank">
+            NASA Blogs
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.nasa.gov/multimedia/imagegallery/index.html"
+            target="_blank"
+          >
+            NASA Gallery
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://data.nasa.gov/Space-Science/Meteorite-Landings/gh4g-9sfh"
+            target="_blank"
+          >
+            Meteorite Landings
+          </a>
+        </li>
       </ul>
       <div className="flex justify-center items-end">
         &#169; 2023 V45-Team04 | All Rights Reserved
