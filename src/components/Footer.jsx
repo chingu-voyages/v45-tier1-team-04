@@ -19,7 +19,7 @@ function Footer() {
   return (
     <div
       id="footer"
-      className="flex justify-between w-full z-20 fixed bottom-0 px-14 py-2 bg-[#00000060] text-white font-thin"
+      className="bg-gradient-to-t from-black from-50% to-black-950 flex justify-between w-full z-20 fixed bottom-0 px-14 py-2 bg-[#00000060] text-white font-thin"
     >
       <ul>
         <li>

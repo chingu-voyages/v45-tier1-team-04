@@ -89,8 +89,8 @@ function SearchAndFilter({ formData, setformData }) {
 
   return (
     <form className="flex justify-center ">
-      <label>
-        Seach Name:
+      <label className="text-white p-2">
+        <span>Seach Name: </span>
         <input
           name="search"
           className="border-2"
@@ -100,8 +100,8 @@ function SearchAndFilter({ formData, setformData }) {
           value={formData.search}
         />
       </label>
-      <label>
-        startYear:
+      <label className="text-white p-2">
+        <span>Start Year: </span>
         <input
           name="startYear"
           className="border-2"
@@ -113,8 +113,8 @@ function SearchAndFilter({ formData, setformData }) {
           value={formData.startYear}
         />
       </label>
-      <label>
-        endYear
+      <label className="text-white p-2">
+        <span>End Year: </span>
         <input
           name="endYear"
           className="border-2"
@@ -126,8 +126,8 @@ function SearchAndFilter({ formData, setformData }) {
           value={formData.endYear}
         />
       </label>
-      <label>
-        minMass:
+      <label className="text-white p-2">
+        <span>Min Mass: </span>
         <input
           name="minMass"
           className="border-2"
@@ -139,7 +139,7 @@ function SearchAndFilter({ formData, setformData }) {
           value={formData.minMass}
         />
       </label>
-      <label>
+      <label className="text-white p-2">
         maxMass:
         <input
           name="maxMass"
