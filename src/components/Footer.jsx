@@ -19,9 +19,9 @@ function Footer() {
   return (
     <div
       id="footer"
-      className="bg-gradient-to-t from-black from-50% to-black-950 flex justify-between w-full z-20 fixed bottom-0 px-14 py-2 bg-[#00000060] text-white font-thin"
+      className="bg-gradient-to-t from-black from-50% to-black-950 flex flex-wrap justify-center sm:justify-between w-full z-20 fixed bottom-0 px-6 py-3 bg-[#00000060] text-white font-thin"
     >
-      <ul>
+      <ul className="hidden sm:block ">
         <li>
           <Link to="/search">Search</Link>
         </li>
@@ -47,10 +47,10 @@ function Footer() {
           </a>
         </li>
       </ul>
-      <div className="flex justify-center items-end">
+      <div className="order-last sm:order-none pt-4 text-xs flex justify-center items-end">
         &#169; 2023 V45-Team04 | All Rights Reserved
       </div>
-      <ul className="w-[13em]">
+      <ul className="w-[13em] text-sm">
         {/* List all contributors */}
         {sortedContributors.map((contributor) => (
           <ContributorList

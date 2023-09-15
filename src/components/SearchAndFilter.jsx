@@ -88,7 +88,7 @@ function SearchAndFilter({ formData, setformData }) {
   }
 
   return (
-    <form className="flex flex-wrap justify-center ">
+    <form className="flex flex-wrap justify-center mx-auto ">
       <label className="text-white p-2">
         <span>Seach Name: </span>
         <input
