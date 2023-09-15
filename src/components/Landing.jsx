@@ -13,8 +13,8 @@ function Landing() {
           Delve into the history of meteorites, from their awe-inspiring
           appearances to their impact on Earth.
         </p>
-        <div className="flex flex-wrap justify-center my-[2em] font-semibold gap-[2em] text-[1rem] lg:text-[1.3rem]">
-          <div className="w-[90%] text-center px-[15px] py-[10px] border-2 border-black rounded-xl text-black font-semibold hover:bg-[#00000080] hover:text-white transition-all ease-in">
+        <div className="flex flex-wrap md:flex-nowrap  justify-center  my-[2em] font-semibold gap-[2em] text-[1rem] lg:text-[1.3rem] ">
+          <div className="w-[90%] md:w-[350px] text-center px-[15px] py-[10px] border-2 border-black rounded-xl text-black font-semibold hover:bg-[#00000080] hover:text-white transition-all ease-in">
             <a
               href="https://solarsystem.nasa.gov/asteroids-comets-and-meteors/overview/"
               target="_blank"
@@ -22,7 +22,7 @@ function Landing() {
               Learn more
             </a>
           </div>
-          <div className="w-[90%] text-center px-[15px] py-[10px] border-2 border-black rounded-xl bg-[#00000080] text-white hover:bg-transparent hover:text-black transition-all ease-in">
+          <div className="w-[90%] md:w-[350px] text-center px-[15px] py-[10px] border-2 border-black rounded-xl bg-[#00000080] text-white hover:bg-transparent hover:text-black transition-all ease-in">
             <Link to="/search">Search Meteorites</Link>
           </div>
         </div>

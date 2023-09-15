@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <nav className="bg-gradient-to-b from-black from-60% to-black-950 flex justify-between w-full sticky z-20 top-0 font-extrabold xl:text-[1.2rem] lg:text-[1rem] sm:text-[.8rem] text-white p-6">
+    <nav className="bg-gradient-to-b from-black from-60% to-black-950 flex justify-between w-full sticky z-20 top-0 font-extrabold xl:text-[1.2rem] lg:text-[1rem] md:text-[.8rem] text-white p-6 md:px-14">
       <h1 className="tracking-wide lg:text-[1.3rem] text-[1rem] cursor-pointer">
         <Link to="/">Fireball</Link>
       </h1>
