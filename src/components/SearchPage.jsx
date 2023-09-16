@@ -1,8 +1,10 @@
 import Card from "./Card";
 import { useState, useEffect } from "react";
 import SearchAndFilter from "./SearchAndFilter";
+import data45k from "../assets/Meteorite_Landings_16.09.2023.json";
 
 function SearchPage() {
+  // Fetch data starts here
   const url = "https://data.nasa.gov/resource/gh4g-9sfh.json";
   const [data, setData] = useState([]);
 
@@ -14,6 +16,13 @@ function SearchPage() {
   useEffect(() => {
     fetchInfo();
   }, []);
+  console.log(data);
+  // Fetch data ends here
+
+  // Start test data JSON with 45000+ meteorite landings
+  // const [data, setData] = useState(data45k);
+  // console.log(data);
+  // End test data JSON with 45000+ meteorite landings
 
   // formData state holds all the form data in one object
   const [formData, setformData] = useState({
@@ -25,6 +34,7 @@ function SearchPage() {
   });
 
   function meteoriteFilter() {
+    // Giving data to the filter
     let tempData = data;
 
     if (
