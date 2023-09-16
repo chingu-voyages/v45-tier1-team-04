@@ -40,7 +40,7 @@ function Footer() {
         </li>
         <li>
           <a
-            href="https://data.nasa.gov/Space-Science/Meteorite-Landings/gh4g-9sfh"
+            href="https://data.nasa.gov/Space-Science/Meteorite-Landings/ak9y-cwf9"
             target="_blank"
           >
             Meteorite Landings
