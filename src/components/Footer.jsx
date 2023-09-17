@@ -46,6 +46,15 @@ function Footer() {
             Meteorite Landings
           </a>
         </li>
+        <hr className="my-1" />
+        <li className="transition hover:scale-110">
+          <a
+            href="https://github.com/chingu-voyages/v45-tier1-team-04/tree/development-branch"
+            target="_blank"
+          >
+            Project GitHub repo
+          </a>
+        </li>
       </ul>
       <div className="order-last md:order-none mt-4 text-xs md:text-l flex justify-center items-end">
         <a href="https://github.com/chingu-voyages/v45-tier1-team-04" target="_blank">

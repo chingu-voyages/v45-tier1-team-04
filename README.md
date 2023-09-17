@@ -44,7 +44,7 @@ In this project, we used different tech and dependencies to make it work smoothl
 - Fonts from [Google Fonts](https://fonts.google.com/)
 - Icons from [Font Awesome](https://fontawesome.com/)
 - Favicon from [Freepik](https://www.freepik.com/) by [frimufilms](https://www.freepik.com/free-vector/astronomy-icons-collection_1033151.htm#query=meteor&position=1&from_view=search&track=sph)
-- Background image from [Unsplash](https://unsplash.com/) by [Nathan Anderson](https://unsplash.com/@nathananderson?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+- Background image from [Unsplash](https://unsplash.com/) by [Simon Schwyter](https://unsplash.com/photos/iq2qbNT_2x0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
 ## Fork the project
 
