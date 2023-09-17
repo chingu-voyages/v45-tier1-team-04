@@ -58,7 +58,7 @@ function Footer() {
       </ul>
       <div className="order-last md:order-none mt-4 text-xs md:text-l flex justify-center items-end">
         <a
-          href="https://github.com/chingu-voyages/v45-tier1-team-04"
+          href="https://github.com/chingu-voyages/v45-tier1-team-04/tree/development-branch"
           target="_blank"
         >
           &#169; 2023 V45-Team04 | All Rights Reserved
