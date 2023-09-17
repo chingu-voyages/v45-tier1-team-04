@@ -21,16 +21,16 @@ function Footer() {
       id="footer"
       className="bg-gradient-to-t from-black from-50% to-black-950 flex flex-col md:flex-row justify-center md:justify-between w-full z-20 fixed bottom-0 px-6 py-3 md:px-14 bg-[#00000060] text-white font-thin"
     >
-      <ul className="hidden md:block ">
-        <li>
+      <ul className="hidden md:block cursor-pointer ">
+        <li className="transition hover:scale-110">
           <Link to="/search">Search</Link>
         </li>
-        <li>
+        <li className="transition hover:scale-110">
           <a href="https://blogs.nasa.gov/" target="_blank">
             NASA Blogs
           </a>
         </li>
-        <li>
+        <li className="transition hover:scale-110">
           <a
             href="https://www.nasa.gov/multimedia/imagegallery/index.html"
             target="_blank"
@@ -38,7 +38,7 @@ function Footer() {
             NASA Gallery
           </a>
         </li>
-        <li>
+        <li className="transition hover:scale-110">
           <a
             href="https://data.nasa.gov/Space-Science/Meteorite-Landings/ak9y-cwf9"
             target="_blank"
@@ -74,7 +74,7 @@ function ContributorList({ contributor }) {
         target="_blank"
       >
         <span className="w-[90%]">{contributor.gitHubName}</span>
-        <span>
+        <span className=" cursor-pointer transition hover:scale-125">
           <FontAwesomeIcon icon={faGithub} />
         </span>
       </a>
