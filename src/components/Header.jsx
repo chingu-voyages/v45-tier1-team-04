@@ -7,13 +7,13 @@ function Header() {
         <Link to="/">Fireball</Link>
       </h1>
       <ul className="flex justify-center items-center gap-[1.5em] text-[.7rem] uppercase font-bold">
-        <li className="cursor-pointer">
+        <li className="cursor-pointer transition hover:scale-105">
           <Link to="/">Home</Link>
         </li>
-        <li className="cursor-pointer">
+        <li className="cursor-pointer transition hover:scale-105">
           <Link to="/search">Search</Link>
         </li>
-        <li className="cursor-pointer">
+        <li className="cursor-pointer transition hover:scale-105">
           {" "}
           <a href="https://blogs.nasa.gov/" target="_blank">
             Blogs
