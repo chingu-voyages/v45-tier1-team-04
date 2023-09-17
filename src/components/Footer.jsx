@@ -48,7 +48,9 @@ function Footer() {
         </li>
       </ul>
       <div className="order-last md:order-none mt-4 text-xs md:text-l flex justify-center items-end">
+        <a href="https://github.com/chingu-voyages/v45-tier1-team-04" target="_blank">
         &#169; 2023 V45-Team04 | All Rights Reserved
+        </a>
       </div>
       <ul className="w-[13em] text-sm md:text-l p-2 mx-auto md:mx-0">
         {/* List all contributors */}
@@ -73,7 +75,7 @@ function ContributorList({ contributor }) {
         href={contributor.gitHubLink}
         target="_blank"
       >
-        <span className="w-[90%]">{contributor.gitHubName}</span>
+        <span className="w-[90%] transition hover:scale-110">{contributor.gitHubName}</span>
         <span className=" cursor-pointer transition hover:scale-125">
           <FontAwesomeIcon icon={faGithub} />
         </span>
