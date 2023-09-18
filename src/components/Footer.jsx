@@ -5,7 +5,7 @@ import contributors from "../assets/contributors";
 //and footer shoud be positioned absolute or fixed like navbar
 //because we should have it on every page in our app
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
 //better way is to install react-icons so you can use any icons library, fontawesome as well
 //then you can import the same way {name of icon} from 'react-icons/fa -if it's fontawesome' and than use in project
@@ -72,6 +72,20 @@ function Footer() {
             contributor={contributor}
           />
         ))}
+        <li>
+          <a
+            className="flex justify-between"
+            href="https://www.linkedin.com/in/ezeuche/"
+            target="_blank"
+          >
+            <span className="w-[90%] transition hover:scale-110">
+              Uchenna Ezeonuogu
+            </span>
+            <span className=" cursor-pointer transition hover:scale-125">
+              <FontAwesomeIcon icon={faLinkedinIn} />
+            </span>
+          </a>
+        </li>
       </ul>
     </div>
   );

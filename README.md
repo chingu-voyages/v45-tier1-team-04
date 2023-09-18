@@ -76,7 +76,7 @@ npm run dev
 - [Drazen-TheGRC](https://github.com/Drazen-TheGRC)
 - [FWDcodeStorage](https://github.com/FWDcodeStorage)
 - [maggickkw](https://github.com/maggickkw)
-- [Uchenna Ezeonuogu]
+- [Uchenna Ezeonuogu](https://www.linkedin.com/in/ezeuche/)
 
 ## License
 

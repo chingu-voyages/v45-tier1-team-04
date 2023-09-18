@@ -15,10 +15,10 @@ const contributors = [
     gitHubName: "FWDcodeStorage",
     gitHubLink: "https://github.com/FWDcodeStorage",
   },
-  {
-    gitHubName: "Uchenna Ezeonuogu",
-    gitHubLink: "",
-  },
+  // {
+  //   gitHubName: "Uchenna Ezeonuogu",
+  //   gitHubLink: "",
+  // },
 ];
 
 export default contributors;
